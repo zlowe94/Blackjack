@@ -33,7 +33,7 @@ Player's turn
      return 10;
      }
    // When you draw an ace and we want its value to be 1 instead of 11 there will be a seperate function called reduceAce that says 
-   while (playerSum . 21 && playerAceCount > 0) {
+  if a playerSum is > 21 to reduce the value of ace to 1 
    playerSum -= 10; // <---- subtract 10 from player's score to give the ace a "value of 1" //
 // Every other card's value will be returned as its face value using the parseInt     
 // Player can select to hit or stay
