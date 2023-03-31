@@ -22,7 +22,20 @@
 // Save the value of each deal and compare the stored values using a compare function
 
 Player's turn
-// Link a variable to the player's card sum that counts the total number of aces used so we can keep track of the number of times a card can either be 1 or 11
+
+// To get value of the player's hand I will use a function labled getValue to store the initial values of each card
+      // Because aces must be scored as either a 1 or 11 I will create a variable that will store the nummber of aces that have (or haven't) been used to access later in the game
+      //Also, face cards (K, Q, J) are not integers so they must also be assigned a value of 10
+      // Inside of the function for determining values I will create a seperate conditional statement for the A, K, Q, and J that says 
+     if (isNaN(value == "A")) {
+     return 11;
+     }
+     return 10;
+     }
+   // When you draw an ace and we want its value to be 1 instead of 11 there will be a seperate function called reduceAce that says 
+   while (playerSum . 21 && playerAceCount > 0) {
+   playerSum -= 10; // <---- subtract 10 from player's score to give the ace a "value of 1" //
+// Every other card's value will be returned as its face value using the parseInt     
 // Player can select to hit or stay
 // On stay their turn ends and the dealer's function is ran
 // If player busts ( > 21) or gets blackjack (=== 21) render corresponding message
