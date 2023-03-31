@@ -22,11 +22,13 @@
 // Save the value of each deal and compare the stored values using a compare function
 
 Player's turn
+// Link a variable to the player's card sum that counts the total number of aces used so we can keep track of the number of times a card can either be 1 or 11
 // Player can select to hit or stay
 // On stay their turn ends and the dealer's function is ran
 // If player busts ( > 21) or gets blackjack (=== 21) render corresponding message
 
 Dealer's Turn
+// Use same ace logic from above to account for the number of aces that have already been distributed
 // If the dealer's hand is < 17 an additional card will be added
 // Check if dealer hand is > player's hand ( or === 21)
 // If either condition above is true, display message for dealer win
